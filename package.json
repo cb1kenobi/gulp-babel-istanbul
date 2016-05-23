@@ -24,9 +24,6 @@
     }
   ],
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/cb1kenobi/gulp-babel-istanbul.git"
