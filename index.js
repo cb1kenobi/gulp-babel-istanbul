@@ -8,7 +8,7 @@ var _ = require('lodash');
 var Report = istanbul.Report;
 var Collector = istanbul.Collector;
 var PluginError = gutil.PluginError;
-// var checker = require('istanbul-threshold-checker');
+var checker = require('./threshold-checker');
 
 var PLUGIN_NAME = 'gulp-babel-istanbul';
 var COVERAGE_VARIABLE = '$$cov_' + new Date().getTime() + '$$';
@@ -133,11 +133,6 @@ plugin.writeReports = function (opts) {
   return cover;
 };
 
-plugin.enforceThresholds = function () {
-  return through().resume();
-};
-
-/*
 plugin.enforceThresholds = function (opts) {
   opts = opts || {};
   opts = _.defaults(opts, {
@@ -168,4 +163,3 @@ plugin.enforceThresholds = function (opts) {
 
   return cover;
 };
-*/
