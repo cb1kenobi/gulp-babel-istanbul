@@ -8,3 +8,6 @@ lcovonly
 ._*
 npm-debug.log
 .git*
+.editorconfig
+.jshintrc
+.travis.yml
