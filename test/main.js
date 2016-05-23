@@ -377,7 +377,7 @@ describe('gulp-babel-istanbul', function () {
       rimraf.sync('cov-foo');
     });
 
-    it.skip('checks coverage fails against global threshold', function (done) {
+    it('checks coverage fails against global threshold', function (done) {
       var resolved = false;
 
       process.stdout.write = function () {};
@@ -401,7 +401,7 @@ describe('gulp-babel-istanbul', function () {
         });
     });
 
-    it.skip('checks coverage fails against per file threshold', function (done) {
+    it('checks coverage fails against per file threshold', function (done) {
       var resolved = false;
 
       process.stdout.write = function () {};
@@ -425,7 +425,7 @@ describe('gulp-babel-istanbul', function () {
         });
     });
 
-    it.skip('checks coverage passes against global and per file thresholds', function (done) {
+    it('checks coverage passes against global and per file thresholds', function (done) {
       var resolved = false;
 
       process.stdout.write = function () {};
@@ -448,7 +448,7 @@ describe('gulp-babel-istanbul', function () {
         });
     });
 
-    it.skip('checks coverage with a custom coverage variable', function (done) {
+    it('checks coverage with a custom coverage variable', function (done) {
       var resolved = false;
       var coverageVariable = 'CUSTOM_COVERAGE_VARIABLE';
 
