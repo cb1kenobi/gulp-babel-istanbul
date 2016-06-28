@@ -30,17 +30,17 @@ var mocha = require('gulp-mocha');
 
 gulp.task('coverage', function (cb) {
   gulp.src('src/**/*.js')
-	.pipe(istanbul())
-	.pipe(istanbul.hookRequire()) // or you could use .pipe(injectModules())
-	.on('finish', function () {
-	  gulp.src('test/**/*.js')
-		.pipe(babel())
-		.pipe(injectModules())
-		.pipe(mocha())
-		.pipe(babelIstanbul.writeReports())
-    .pipe(babelIstanbul.enforceThresholds({ thresholds: { global: 90 } }))
-		.on('end', cb);
-	});
+  .pipe(istanbul())
+  .pipe(istanbul.hookRequire()) // or you could use .pipe(injectModules())
+  .on('finish', function () {
+    gulp.src('test/**/*.js')
+    .pipe(babel())
+    .pipe(injectModules())
+    .pipe(mocha())
+    .pipe(istanbul.writeReports())
+    .pipe(istanbul.enforceThresholds({ thresholds: { global: 90 } }))
+    .on('end', cb);
+  });
 });
 ```
 
@@ -57,13 +57,13 @@ var istanbul = require('gulp-babel-istanbul');
 
 gulp.task('test', function (cb) {
   gulp.src(['lib/**/*.js', 'main.js'])
-  .pipe(istanbul()) // Covering files
-  .pipe(gulp.dest('test-tmp/'))
-  .on('finish', function () {
-    gulp.src(['test/*.html'])
-    .pipe(testFramework())
-    .pipe(istanbul.writeReports()) // Creating the reports after tests ran
-    .on('end', cb);
+    .pipe(istanbul()) // Covering files
+    .pipe(gulp.dest('test-tmp/'))
+    .on('finish', function () {
+      gulp.src(['test/*.html'])
+        .pipe(testFramework())
+        .pipe(istanbul.writeReports()) // Creating the reports after tests ran
+        .on('end', cb);
   });
 });
 ```
