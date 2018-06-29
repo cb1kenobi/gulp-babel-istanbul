@@ -28,7 +28,7 @@ https://github.com/peterjwest/istanbul-threshold-checker
 
 var assert = require('assert');
 var checker = require('../threshold-checker');
-var istanbul = require('babel-istanbul');
+var istanbul = require('babel-istanbul-reborn');
 
 describe('threshold-checker', function() {
   describe('checkThreshold', function() {

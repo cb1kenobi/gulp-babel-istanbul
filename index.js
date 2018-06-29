@@ -10,7 +10,7 @@ var Collector = istanbul.Collector;
 var PluginError = gutil.PluginError;
 var checker = require('./threshold-checker');
 
-var PLUGIN_NAME = 'gulp-babel-istanbul';
+var PLUGIN_NAME = 'gulp-babel-istanbul-reborn';
 var COVERAGE_VARIABLE = '$$cov_' + new Date().getTime() + '$$';
 
 var plugin = module.exports = function (opts) {
