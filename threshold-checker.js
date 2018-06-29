@@ -27,7 +27,7 @@ https://github.com/peterjwest/istanbul-threshold-checker
 */
 
 var _ = require('lodash');
-var utils = require('babel-istanbul').utils;
+var utils = require('babel-istanbul-reborn').utils;
 
 var TYPES = ['lines', 'statements', 'functions', 'branches'];
 

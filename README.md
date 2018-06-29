@@ -11,7 +11,7 @@ Works on top of any Node.js unit test framework.
 
 ## Installation
 
-	npm install gulp-babel-istanbul --save-dev
+	npm install gulp-babel-istanbul-reborn --save-dev
 
 ## Example
 
@@ -24,7 +24,7 @@ The following example is a sort of "kitchen sink" example of how to use
 
 ```javascript
 var babel = require('gulp-babel');
-var istanbul = require('gulp-babel-istanbul');
+var istanbul = require('gulp-babel-istanbul-reborn');
 var injectModules = require('gulp-inject-modules');
 var mocha = require('gulp-mocha');
 
