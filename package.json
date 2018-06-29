@@ -9,12 +9,12 @@
     "unit test",
     "babel"
   ],
-  "homepage": "https://github.com/cb1kenobi/gulp-babel-istanbul",
-  "bugs": "https://github.com/cb1kenobi/gulp-babel-istanbul/issues",
+  "homepage": "https://github.com/benedictchen/gulp-babel-istanbul-reborn",
+  "bugs": "https://github.com/benedictchen/gulp-babel-istanbul-reborn/issues",
   "author": {
-    "name": "Simon Boudrias",
-    "email": "admin@simonboudrias.com",
-    "url": "https://github.com/SBoudrias"
+    "name": "Benedict Chen",
+    "email": "thebenedictchen@gmail.com",
+    "url": "https://github.com/benedictchen"
   },
   "contributors": [
     {
@@ -26,7 +26,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:benedictchen/gulp-babel-istanbul-reborn.git"
   },
   "scripts": {
     "pretest": "jshint index.js ./test/.",
