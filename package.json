@@ -1,6 +1,6 @@
 {
-  "name": "gulp-babel-istanbul",
-  "version": "1.6.1",
+  "name": "gulp-babel-istanbul-reborn",
+  "version": "1.6.2",
   "description": "Babel + Istanbul unit test coverage plugin for gulp.",
   "keywords": [
     "gulpplugin",
