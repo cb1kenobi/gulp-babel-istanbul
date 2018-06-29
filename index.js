@@ -2,7 +2,7 @@
 
 var through = require('through2').obj;
 var path = require('path');
-var istanbul = require('babel-istanbul');
+var istanbul = require('babel-istanbul-reborn');
 var gutil = require('gulp-util');
 var _ = require('lodash');
 var Report = istanbul.Report;

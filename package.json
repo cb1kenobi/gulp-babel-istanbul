@@ -1,6 +1,6 @@
 {
   "name": "gulp-babel-istanbul",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Babel + Istanbul unit test coverage plugin for gulp.",
   "keywords": [
     "gulpplugin",
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "babel-core": "^6.21.0",
-    "babel-istanbul": "^0.12.1",
+    "babel-istanbul-reborn": "^0.12.2",
     "babel-preset-es2015": "^6.18.0",
     "gulp-util": "^3.0.8",
     "lodash": "^4.17.4",
